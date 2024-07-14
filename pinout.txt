@@ -1,0 +1,19 @@
+(uart, idk where XCK and XDIR went lmao)
+07 - PA0 - USART4_TX
+08 - PA1 - USART4_RX
+
+09 - PA2 - USART2_TX (flash)
+10 - PA3 - USART2_RX (flash)
+
+11 - PA4 - SPI1_NSS
+12 - PA5 - SPI1_SCK
+13 - PA6 - SPI1_MISO
+14 - PA7 - SPI1_MOSI
+
+15 - PB0 - FDCAN2_RX
+16 - PB1 - FDCAN2_TX
+
+25 - BOOT0
+
+30 - PB6 - I2C1_SCL
+31 - PB7 = I2C1_SDA
