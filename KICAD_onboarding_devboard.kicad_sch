@@ -5051,7 +5051,17 @@
 		)
 		(uuid dd70d7dd-dc4b-4e67-8ec8-366a7294aed5)
 	)
-	(text "BOOT0->VCC: system memory (UART flash)\nBOOT0->GND: main flash memory\n*is this the right value for a pull-down?*\n"
+	(text "*I don't think this\nconnector is right...*"
+		(exclude_from_sim no)
+		(at 159.766 21.336 0)
+		(effects
+			(font
+				(size 0.6 0.6)
+			)
+		)
+		(uuid "01affe06-f1a6-4ad2-a6c2-abaeb0342249")
+	)
+	(text "BOOT0->VCC: system memory (UART flash)\nBOOT0->GND: main flash memory\n*is this the right value for a pull-down?*\n	*should it be a pull-up?*"
 		(exclude_from_sim no)
 		(at 138.176 40.132 0)
 		(effects
@@ -5072,9 +5082,20 @@
 		)
 		(uuid "81eda0ab-53d5-41cd-88b9-aa149710ca12")
 	)
+	(text "headers needed:\n1. SPI_NSS			X\n2. SPI_SCK			X\n3. SPI_MISO			X\n4. SPI_MOSI			X\n5. UART_TX			X\n6. UART_RX 			X\n7. I2C_SCL\n8. I2C_SDA\n9. 3.3V\n10. 5V?\n11. GND\n12. extra pins for shtuff"
+		(exclude_from_sim no)
+		(at 173.99 112.014 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0bf1c4f-6481-459c-971e-155642dad069")
+	)
 	(text "USB->UART"
 		(exclude_from_sim no)
-		(at 36.576 51.054 0)
+		(at 36.83 49.276 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -5082,9 +5103,9 @@
 		)
 		(uuid "ba0b1617-855b-4661-b89c-e068284333b9")
 	)
-	(text "supplying 3.3V to pin 4: VCCIO is setting the signal\n	level for tx/rx if I'm understanding correctly\nlooks like CTS+DTR aren't required for our application?\nuse pins 22/23 for TX/RX debugging LED? \ntbh I have NO idea why the capacitors are there\n"
+	(text "supplying 3.3V to pin 4: VCCIO is setting the signal\n	level for tx/rx if I'm understanding correctly\nlooks like CTS+DTR aren't required for our application?\nuse pins 22/23 for TX/RX debugging LED?"
 		(exclude_from_sim no)
-		(at 14.478 57.404 0)
+		(at 14.732 55.626 0)
 		(effects
 			(font
 				(size 1.27 1.27)
