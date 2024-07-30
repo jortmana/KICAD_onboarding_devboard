@@ -5218,9 +5218,9 @@
 		)
 		(uuid dd70d7dd-dc4b-4e67-8ec8-366a7294aed5)
 	)
-	(text "*is there a 3.3->3.3 version? \n	or a 5->3.3 version?*"
+	(text "*is there a 5->3.3 version? this seems too simple\n	but from the datasheet it seemed like it was just this...?*"
 		(exclude_from_sim no)
-		(at 174.498 62.992 0)
+		(at 192.278 62.992 0)
 		(effects
 			(font
 				(size 1.27 1.27)
