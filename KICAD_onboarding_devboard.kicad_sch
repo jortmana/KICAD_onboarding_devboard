@@ -3691,6 +3691,143 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:TLV76133DCY"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TLV76133DCY"
+				(at -1.27 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv761.pdf"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "3.3V, 1A, Low Noise, High-PSRR LDO Regulator, 2.5V...16V input, SOT-223"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "voltage fixed low-dropout"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT*223*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TLV76133DCY_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TLV76133DCY_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0) hide)
@@ -3959,6 +4096,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 64.77) (xy 151.13 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01a3b5b4-afae-41f6-bbc7-73c6ffce8e3f")
+	)
+	(wire
+		(pts
 			(xy 220.98 35.56) (xy 226.06 35.56)
 		)
 		(stroke
@@ -4126,6 +4273,16 @@
 			(type default)
 		)
 		(uuid "1ba7f7d3-4385-4b4e-a1dd-545fb05d48fc")
+	)
+	(wire
+		(pts
+			(xy 158.75 57.15) (xy 161.29 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be8e83a-4a23-4e44-9263-58e886cc50f5")
 	)
 	(wire
 		(pts
@@ -4576,6 +4733,16 @@
 			(type default)
 		)
 		(uuid "8570deb5-536a-4eea-917c-d3984a639b5c")
+	)
+	(wire
+		(pts
+			(xy 140.97 57.15) (xy 143.51 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89559093-3c21-43e8-af27-d4e877fa3a68")
 	)
 	(wire
 		(pts
@@ -5051,6 +5218,16 @@
 		)
 		(uuid dd70d7dd-dc4b-4e67-8ec8-366a7294aed5)
 	)
+	(text "*is there a 3.3->3.3 version? \n	or a 5->3.3 version?*"
+		(exclude_from_sim no)
+		(at 174.498 62.992 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0031fe73-9345-4685-b2f5-2929f1c52cbc")
+	)
 	(text "*I don't think this\nconnector is right...*"
 		(exclude_from_sim no)
 		(at 159.766 21.336 0)
@@ -5082,12 +5259,12 @@
 		)
 		(uuid "81eda0ab-53d5-41cd-88b9-aa149710ca12")
 	)
-	(text "headers needed:\n1. SPI_NSS			X\n2. SPI_SCK			X\n3. SPI_MISO			X\n4. SPI_MOSI			X\n5. UART_TX			X\n6. UART_RX 			X\n7. I2C_SCL\n8. I2C_SDA\n9. 3.3V\n10. 5V?\n11. GND\n12. extra pins for shtuff"
+	(text "TODO:\n-HEADERS for SPI,UART,I2C,3.3,5,GND, and spare IO\n-I2C hardware? Unsure what else I'd need if there's no buffer chip\n-CAN inductor swap\n-more power protection!? coupling capacitors? not sure how to go about that\n\nstuff I'm aware of:\n-consider uart_flash tx/rx LEDs \n-consider disconnecting flash_uart when using STlink, I might have missed\n	a component for STlink but I think I have the pins I need....\n"
 		(exclude_from_sim no)
-		(at 173.99 112.014 0)
+		(at 147.066 113.03 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.524 1.524)
 			)
 			(justify left)
 		)
@@ -5277,6 +5454,17 @@
 		)
 		(uuid "3489c18b-a1f8-4772-ab0e-0cb4ecf92848")
 	)
+	(label "3.3V_DIRTY"
+		(at 140.97 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "42a81a7e-31eb-4dbe-a811-45c784581e50")
+	)
 	(label "SWCLK{slash}BOOT0"
 		(at 140.97 25.4 180)
 		(fields_autoplaced yes)
@@ -5375,6 +5563,17 @@
 			(justify right bottom)
 		)
 		(uuid "76b5c755-0d19-412d-a22c-82c4a05b1a20")
+	)
+	(label "3.3V"
+		(at 161.29 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "791d6d76-fd7d-4ac2-a230-a3ca50df4a39")
 	)
 	(label "CAN_L"
 		(at 243.84 52.07 180)
@@ -5485,6 +5684,17 @@
 			(justify left bottom)
 		)
 		(uuid "a0c91ab9-41de-49b2-ad3e-1d707f102ad4")
+	)
+	(label "GND"
+		(at 151.13 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7c7484b-ac64-4df9-b267-faa8a7a4c8d2")
 	)
 	(label "I2C_SDA"
 		(at 68.58 137.16 180)
@@ -6385,6 +6595,77 @@
 			(project ""
 				(path "/8af9afbd-1b65-47c4-8f98-8f2b7f674f49"
 					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TLV76133DCY")
+		(at 151.13 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "986e8c11-6042-45ac-9d14-23f5fe538bf3")
+		(property "Reference" "U?"
+			(at 151.13 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV76133DCY"
+			(at 151.13 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 151.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv761.pdf"
+			(at 151.13 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.3V, 1A, Low Noise, High-PSRR LDO Regulator, 2.5V...16V input, SOT-223"
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b3977d72-3336-4c91-9cc2-a322b10bbb80")
+		)
+		(pin "1"
+			(uuid "7b06b6e8-b3b1-4b6f-a5b6-14c7e9d4286f")
+		)
+		(pin "2"
+			(uuid "6c5fcc6d-4522-4b6a-9f0e-d632e390059d")
+		)
+		(instances
+			(project ""
+				(path "/8af9afbd-1b65-47c4-8f98-8f2b7f674f49"
+					(reference "U?")
 					(unit 1)
 				)
 			)
